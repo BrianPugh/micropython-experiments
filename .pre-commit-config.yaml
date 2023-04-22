@@ -54,7 +54,7 @@ repos:
       - id: creosote
         args:
           - "--venv=.venv"
-          - "--paths=pythontemplate"
+          - "--paths=upyexperiments"
           - "--deps-file=pyproject.toml"
           - "--sections=tool.poetry.dependencies"
 

@@ -8,23 +8,21 @@ vcs = "git"
 style = "semver"
 
 [tool.poetry]
-name = "pythontemplate"
+name = "upyexperiments"
 version = "0.0.0"  # Do not change, let poetry-dynamic-versioning handle it.
-homepage = "https://github.com/GIT_USERNAME/GIT_REPONAME"
-repository = "https://github.com/GIT_USERNAME/GIT_REPONAME"
+homepage = "https://github.com/BrianPugh/micropython-experiments"
+repository = "https://github.com/BrianPugh/micropython-experiments"
 license = "Apache-2.0"
 description = ""
-authors = ["YOUR_NAME_HERE"]
+authors = ["Brian Pugh"]
 readme = "README.rst"
-packages = [{include = "pythontemplate"}]
+packages = [{include = "upyexperiments"}]
 
 [tool.poetry.scripts]
-pythontemplate = "pythontemplate.cli.main:run_app"
 
 [tool.poetry.dependencies]
 # Be as loose as possible if writing a library.
 python = "^3.8"
-typer = ">=0.7.0, <1.0.0"
 
 [tool.poetry.group.docs.dependencies]
 sphinx = "~4.5.0"

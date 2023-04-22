@@ -13,13 +13,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path("../..").absolute()))
 
 
-from pythontemplate import __version__
+from upyexperiments import __version__
 
 # -- Project information -----------------------------------------------------
 
-project = "pythontemplate"
-copyright = f"{date.today().year}, YOUR_NAME_HERE"
-author = "YOUR_NAME_HERE"
+project = "upyexperiments"
+copyright = f"{date.today().year}, Brian Pugh"
+author = "Brian Pugh"
 
 # The short X.Y version.
 version = __version__
@@ -100,8 +100,8 @@ html_theme_options = {
 html_context = {
     # Github options
     "display_github": True,
-    "github_user": "GIT_USERNAME",
-    "github_repo": "GIT_REPONAME",
+    "github_user": "BrianPugh",
+    "github_repo": "micropython-experiments",
     "github_version": "main",
     "conf_py_path": "/docs/source/",
 }
