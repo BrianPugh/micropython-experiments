@@ -8,15 +8,15 @@ vcs = "git"
 style = "semver"
 
 [tool.poetry]
-name = "upyexperiments"
+name = "micropython-experiments"
 version = "0.0.0"  # Do not change, let poetry-dynamic-versioning handle it.
 homepage = "https://github.com/BrianPugh/micropython-experiments"
 repository = "https://github.com/BrianPugh/micropython-experiments"
 license = "Apache-2.0"
 description = ""
 authors = ["Brian Pugh"]
-readme = "README.rst"
-packages = [{include = "upyexperiments"}]
+readme = "README.md"
+packages = [{include = "micropython-experiments"}]
 
 [tool.poetry.scripts]
 
