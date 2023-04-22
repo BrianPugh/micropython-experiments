@@ -24,10 +24,6 @@ packages = [{include = "upyexperiments"}]
 # Be as loose as possible if writing a library.
 python = "^3.8"
 
-[tool.poetry.group.docs.dependencies]
-sphinx = "~4.5.0"
-sphinx_rtd_theme = "~1.0.0"
-
 [tool.poetry.group.dev.dependencies]
 coverage = {extras = ["toml"], version = "^5.1"}
 poetry-dynamic-versioning = "^0.16.0"
@@ -36,6 +32,7 @@ pytest = "^7.1.2"
 pytest-cov = "^3.0.0"
 pytest-mock = "^3.7.0"
 black = "^23.1.0"
+belay = ">=0.19.2, <1.0.0"
 
 [tool.poetry.group.debug]
 optional = true
@@ -49,6 +46,22 @@ branch = true
 omit = [
     "tests/*",
 ]
+
+[tool.belay.group.dev]
+optional = true
+
+[tool.belay.group.dev.dependencies]
+argparse = "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/argparse/argparse.py"
+fnmatch = "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/fnmatch/fnmatch.py"
+pathlib = "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/pathlib/pathlib.py"
+shutil = "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/shutil/shutil.py"
+tempfile = "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/tempfile/tempfile.py"
+unittest = [
+    "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/unittest/unittest/__init__.py",
+    "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/unittest-discover/unittest/__main__.py"
+]
+uprofiler = "https://github.com/BrianPugh/micropython-libs/blob/main/lib/uprofiler.py"
+
 
 [tool.coverage.report]
 exclude_lines = [
