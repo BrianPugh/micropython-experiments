@@ -1012,6 +1012,33 @@ files = [
 traitlets = "*"
 
 [[package]]
+name = "micropython-rp2-stubs"
+version = "1.19.1.post11"
+description = "MicroPython stubs"
+category = "dev"
+optional = false
+python-versions = ">=3.8,<4.0"
+files = [
+    {file = "micropython_rp2_stubs-1.19.1.post11-py3-none-any.whl", hash = "sha256:fb90e02114f87a7aa8b27177cfb6be80c06c078c64b654b3b78f830e0521f3d9"},
+    {file = "micropython_rp2_stubs-1.19.1.post11.tar.gz", hash = "sha256:5682f3276ad83b69cb2b85dbf35bdc9051149f2326cb4dbf6c7bc663492736e8"},
+]
+
+[package.dependencies]
+micropython-stdlib-stubs = ">=0.9.0"
+
+[[package]]
+name = "micropython-stdlib-stubs"
+version = "0.9.0"
+description = "Reduced copy of typeshed's stdlib for use by MicroPython stub packages"
+category = "dev"
+optional = false
+python-versions = ">=3.8,<4.0"
+files = [
+    {file = "micropython-stdlib-stubs-0.9.0.tar.gz", hash = "sha256:35b2e95aacba7ca7955d8c4e01d6d9807b75945fd004ef8aedaa7c1d600069ec"},
+    {file = "micropython_stdlib_stubs-0.9.0-py3-none-any.whl", hash = "sha256:0a9bb4c57b79a507371a26e56b05f3b238d1020077a55f55f6ebd1fa980d85ce"},
+]
+
+[[package]]
 name = "multidict"
 version = "6.0.4"
 description = "multidict implementation"
@@ -1836,4 +1863,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "0a1d1078906be9638347d1a3d4709b6b37e191eb275a506f6d5d84ef9b249dd5"
+content-hash = "aac86afadf40102e58531a18be75c6ec91b0d8820ba4f2395404d129ef2d75d2"

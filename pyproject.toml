@@ -33,6 +33,7 @@ pytest-cov = "^3.0.0"
 pytest-mock = "^3.7.0"
 black = "^23.1.0"
 belay = ">=0.19.2, <1.0.0"
+micropython-rp2-stubs = "^1.19.1.post11"
 
 [tool.poetry.group.debug]
 optional = true
@@ -87,6 +88,11 @@ exclude_lines = [
 [tool.pyright]
 venvPath = "."
 venv = ".venv"
+extraPaths = [
+    ".belay/dependencies/main",
+    ".belay/dependencies/dev",
+]
+
 
 [tool.ruff]
 target-version = 'py38'

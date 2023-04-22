@@ -18,7 +18,13 @@ poetry run belay install /dev/ttyUSB0  # Use your board port.
 Then, run a specific script on-device:
 
 ``` bash
-poetry run belay run /dev/ttyUSB0 micropython-experiments/experiment1/main.py
+poetry run belay run /dev/ttyUSB0 experiments/experiment1/main.py
 ```
 
 # Summary of Results
+
+| Folder | Question | Conclusion |
+|--------|----------|------------|
+|        |          |            |
+|        |          |            |
+|        |          |            |

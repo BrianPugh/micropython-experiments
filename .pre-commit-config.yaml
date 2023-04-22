@@ -48,22 +48,7 @@ repos:
         args: [--markdown-linebreak-ext=md]
         exclude: \.(html|svg)$
 
-  - repo: https://github.com/fredrikaverpil/creosote.git
-    rev: v2.3.8
-    hooks:
-      - id: creosote
-        args:
-          - "--venv=.venv"
-          - "--paths=upyexperiments"
-          - "--deps-file=pyproject.toml"
-          - "--sections=tool.poetry.dependencies"
-
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.4
     hooks:
       - id: codespell
-
-  - repo: https://github.com/RobertCraigie/pyright-python
-    rev: v1.1.299
-    hooks:
-      - id: pyright
