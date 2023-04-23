@@ -48,10 +48,7 @@ omit = [
     "tests/*",
 ]
 
-[tool.belay.group.dev]
-optional = true
-
-[tool.belay.group.dev.dependencies]
+[tool.belay.dependencies]
 argparse = "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/argparse/argparse.py"
 fnmatch = "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/fnmatch/fnmatch.py"
 pathlib = "https://github.com/micropython/micropython-lib/blob/master/python-stdlib/pathlib/pathlib.py"
